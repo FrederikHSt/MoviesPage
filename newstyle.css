@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border-width: 2px;
+    border-color: black;
+    justify-content: space-around;
+    background-color: blue;
+    align-items: center;
+}
+
+.title {
+    grid-area: header;
+    max-height: 200px;
+    padding-top: 20px;
+    margin: 20px;
+}
+
+.image {
+    grid-area: sidebar;
+    max-height: 800px;
+
+    padding-bottom: 100px;
+}
+
+.info {
+    grid-area: main;
+    max-width: 500px;
+
+}
+
+.trailer {
+    grid-area: rightbar;
+}
+
+.card {
+    display: grid;
+    margin: 40px;
+    max-height: 1000px;
+    align-content: center;
+    background-color: lightblue;
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 20% auto;
+    grid-template-areas:
+        "header header header"
+        "sidebar main rightbar";
+}
