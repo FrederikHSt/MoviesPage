@@ -1,3 +1,6 @@
+/*
+    FLEXBOX
+ */
 .container {
     display: flex;
     flex-direction: column;
@@ -18,7 +21,7 @@
 .image {
     grid-area: sidebar;
     max-height: 800px;
-
+    padding-left: 20px;
     padding-bottom: 100px;
 }
 
@@ -31,7 +34,9 @@
 .trailer {
     grid-area: rightbar;
 }
-
+/*
+    GRID
+ */
 .card {
     display: grid;
     margin: 40px;
